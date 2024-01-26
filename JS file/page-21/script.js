@@ -15,28 +15,28 @@
 
 // rabbit.__proto__ = animal; // sets rabbit.[[Prototype]] = animal
 
-class Animal{
-    constructor(name){
+class Animal {
+    constructor(name) {
         this.name = name
         console.log("Object is created...")
     }
 
-    eats(){
+    eats() {
         console.log("Kha raha hoon")
     }
-    jumps(){
+    jumps() {
         console.log("Kood raha hoon")
     }
 }
 
 
 class Lion extends Animal {
-    constructor(name){
-        super(name) 
+    constructor(name) {
+        super(name)
         console.log("Object is created and he is a lion...")
     }
 
-    eats(){
+    eats() {
         super.eats()
         console.log("Kha raha hoon roar")
     }
