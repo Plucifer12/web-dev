@@ -175,7 +175,7 @@ async function main() {
         currentSong.volume = parseInt(e.target.value) / 100
         if (currentSong.volume >0){
             document.querySelector(".volume>img").src = document.querySelector(".volume>img").src.replace("mute.svg", "volume.svg")
-        }
+        } 
     })
 
     document.querySelector(".volume>img").addEventListener("click", e => {
